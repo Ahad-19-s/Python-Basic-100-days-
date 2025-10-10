@@ -1,0 +1,4 @@
+print("hello world")
+print('hello')
+print("sabu i miss you","but you don't understand me")
+print(2%2)
