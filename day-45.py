@@ -1,0 +1,3 @@
+import S
+
+S.welcome()
