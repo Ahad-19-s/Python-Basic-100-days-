@@ -1,4 +1,4 @@
-def decorate(func):
+# def decorate(func):
 #     def wrapper(a, b):
 #         print("good morning")
 #         func(a,b)
@@ -32,3 +32,19 @@ def decorate(func):
 # # Function calls
 # hello()
 # add(2, 4)
+import time
+
+def timer(func):
+    def wrapper():
+        start = time.time()
+        func()
+        end = time.time()
+        print(f"Execution time: {end-start} seconds")
+    return wrapper
+
+@timer
+def test():
+    for i in range(1000000):
+        pass
+
+test()
